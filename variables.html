@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>variables</h1>
+
+    <div id="first"></div>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <div id="second"></div>
+
+    <script>
+        //var keywords
+        // var num = 10 , num = 20;
+        // console.log(num);
+        
+
+        //let keywords
+        // let num1 = 10;
+
+        // {
+        //     // console.log(num2);
+        //     let num2 = 20;
+        //     console.log(num2);
+        // }
+        // console.log(num1);
+
+        // let num3 = 50;
+        // console.log(num3);
+        // num3 = 60;
+        // console.log(num3);
+        
+        //Const keyword
+
+    // const count = 50;
+
+    // {
+    //     const count = 80;
+    //     console.log(count);
+    // }
+    // {
+    //     const count = 100;
+    //     console.log(count); 
+    // }
+
+    // console.log(count);
+    
+    //PRACTICE 1:- Write a simple JavaScript program that displays the redeclared variable.
+        let first = 'Declaring a variable using var';
+        // document.getElementById('first').innerHTML = first;
+        document.body.style.backgroundColor = 'lightblue'
+
+        var x = 'hello';
+        
+        var x = 'hello js';
+       
+        // document.write(x)        
+
+
+      //PRACTICE 2:- Write a JavaScript program with an array, and display the array, display only the element of anarray, add a new element to an array, and display the modified array.
+        // document.getElementById('demo').innerText = 'Declaring a constant array does not make the element unchangable :'
+    
+        const fruits = ['apple', 'orange', 'kiwi'];
+        // document.getElementById('demo1').innerHTML = fruits;
+        //change the element
+        fruits[0] = 'Appricot';
+        //add new element
+        fruits.push('Mango')
+
+        //display the modified array
+        // document.getElementById('demo2').innerHTML = fruits;
+
+        //PRACTICE 3:- Write a simple JavaScript program that tries to redeclare the let variable.
+
+        let y = 'hello';
+        {
+        let y = 'Hello js';
+        }
+        // document.getElementById('second').innerHTML = y;
+
+
+
+
+
+    </script>
+</body>
+</html>
