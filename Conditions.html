@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+
+    <h1>Conditions Statement</h1>
+    
+<p id="demo"></p>
+    <script>
+        var num = 10;
+    if(num%2 == 0)
+    {
+        // console.log('this code is executed')
+    }
+
+    //IF ANS ELSE CONDITION
+
+    var data = 10;
+    if(data % 2 == 0){
+        // console.log('number is even');
+        // document.body.style.backgroundColor = 'green';
+        
+    }else{
+        // console.log('number is odd');
+        // document.body.style.backgroundColor = 'blue';
+    }
+
+    //ELSE IF CONDITION
+    var count = 22;
+    if(count <= 10)
+    {
+        console.log(count + " is smaller than 10");
+        
+    }else if(count > 10 && count < 20){
+        console.log(count + ' is between 10 and 20');
+        
+    }else{
+        console.log(count + " is greater than 20");
+        
+    }
+
+    //SWITCH CONDITION
+    var number = 21;
+    switch(number){
+        case 10:
+        console.log("number is 10");
+        break;
+        case 20:
+        console.log("number is 20");
+        break;
+        default:
+        console.log('number is greater than 20');
+        
+        
+    }
+
+
+    let day;
+    switch(new Date().getDay()){
+        case 0:
+day = "Monday"
+        break;
+        case 1:
+    day = "tuesday"
+        break;
+        case 2:
+        day = "wednsday"
+        break;
+        case 3:
+    day = "thusday"
+        break;
+        case 4:
+day = "friday"
+        break;
+        case 5:
+        day = "saturday"
+        break;
+        case 6:
+day = "sunday"
+        break;
+    }
+    document.getElementById('demo').innerHTML = day;
+
+    </script>
+</body>
+</html>

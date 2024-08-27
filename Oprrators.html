@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operatrs</title>
+</head>
+<body>
+    <h1>Oprators</h1>
+
+    <script>
+        //PRACTICE 1 - Create a JavaScript program that calculates the sum of two variables, where you create twonew variables and assign values to them as the first step and then create a new variable thatcalculates the sum of the other two variables. Print the sum using thedocument.writemethod.
+        var x = 5;
+        var y = 5;
+        var z = x+y;
+        // document.write('the sum of x and y is'+ z)
+        
+
+         //PRACTICE 2 - Using the addition assignment operator, increment the value of the existing variable and printthe values before and after increment.
+         var num = 10;
+        //  document.write('before Increament'+ num)
+         num += 5;
+        //  document.write("<br/>")
+        //  document.write('after increament'+ num)
+
+        //PRACTICE 3 - Using JavaScript operators calculate the number of weeks and remaining days in a year.
+
+        var days = 365;
+        var week_days = 7;
+        var week = Math.trunc(days/week_days);
+        var remaining_days = days % week_days;
+        // document.write('weeks in a year'+week + " " + "reaming days"+remaining_days )
+
+        //PRACTICE 4 - Using the “+” operator concat two strings and print them. Where you create two variables andassign strings as value to them as a first step. Then create a new variable that concates othervariables
+
+        var string1 = 'Hello';
+        var string2 = 'World';
+        var string = string1 + " " + string2
+        document.write(string)
+    </script>
+</body>
