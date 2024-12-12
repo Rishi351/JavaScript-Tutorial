@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <div id="show"></div>
+
+    <script>
+        let students = {
+            name:'Rishi',
+            class : 'V',
+            totalMarks:100,
+            20 : 200,
+            display(){
+                console.log('student name is '+this.name + ' in class '+ this.class + ' has marks are '+ this.totalMarks)
+            }
+        }
+
+        console.log(students[20]); //we can access integer key - value using []
+        
+
+        // document.getElementById('show').innerHTML = students.name
+        function update(x){
+            x.totalMarks = 10
+        }
+        console.log(students.display()) //before updating the value
+        update(students) //update the value
+        console.log(students.display()) //After updating a value
+        
+        
+        function person(name,classs,age,marks){
+            this.name =name;
+            this.classs  =classs;
+            this.age = age;
+            this.marks = marks;
+        }
+
+        let student = new person('yug',10,25,100)  //another typeof object using constructor
+        // console.log(student);
+        
+        //MAP()
+        students3 = new Map();
+        students3.set('name','rishi')
+        students3.set('class','VII')
+        students3.set('city','nagpur')
+
+        students3.delete('city'); //delete the one property
+        console.log(students3);
+
+        students3.set('lastName', 'getme') // add new one property
+        console.log(students3);
+
+        students3.forEach(function(value,key){ //using forEach loop
+            console.log(key + ' '+value);
+            
+        })
+        
+        console.log(students3.keys()); //get only keys
+        console.log(students3.values()); //get only values
+        
+        
+        
+    </script>
+</body>
+</html>

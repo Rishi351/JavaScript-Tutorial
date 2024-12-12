@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function addition(a,b){
+            console.log(a+b);
+            
+        }
+        // var total = addition(10,30)
+        // console.log(total);
+        
+
+        // addition(10,20);
+        // addition(10,50);
+        // addition('Hello', ' World')
+
+        function printEvenNumbers(){
+            for(var i=0; i<=20;i++){
+                console.log(i*2);
+                
+            }
+        }
+        // printEvenNumbers()
+
+        function factorial(a){
+            if(a < 1){
+                return 1;
+            }
+
+            var fact = 1;
+            for(var i =2; i<= a; i++){
+                fact *= i
+            }
+            return fact;
+        }
+        var total = factorial(10)
+        console.log(total);
+        
+    </script>
+</body>
+</html>

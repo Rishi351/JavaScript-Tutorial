@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Questions</title>
+</head>
+<body>
+    <script>
+       //Find the length of array without using Length Keyword
+            
+       function Array_length(arr){
+       var count = 0;
+       for (var i=0; i<arr.length;i++){
+        count += 1;
+       }
+       return count;
+       }
+
+       var arr = [ 1,2,3,4,5,6];
+       var answer = Array_length(arr);
+    //    console.log(answer);
+
+    //FIND OUT THE EVEN NUMBERS IN THE ARRAY AND PUT EVEN NUMBERS IN ANOTHER ARRAY THEN PRINT
+
+    function print_Even(array){
+        var even_arr = [];
+        for(var i=0;i<array.length;i++){
+            var curr = array[i]
+            if(curr % 2 == 0){
+                even_arr.push(curr)
+            }
+        }
+        return even_arr;
+    }
+    var array = [5,60,92,65,29,61,51,65,6,78,87,6,40,80,66];
+    var result = print_Even(array);
+    // console.log(result);
+    
+    
+    //FIND OUT THE ODD NUMBERS IN THE ARRAY AND PUT ODD NUMBERS IN ANOTHER ARRAY THEN PRINT
+    function print_Odd(array){
+        var odd_arr = [];
+        for(var j=0; j<array.length;j++){
+            var current= array[j]
+            if(current % 2 == 1){
+                odd_arr.push(current)
+            }
+        }
+        return odd_arr;
+    }
+    var result2 = print_Odd(array)
+    //    console.log(result2);
+       
+
+    //SUM OFF ALL ELEMENTS IN THE ARRAY
+    function array_sum(array){
+        var sum_arr = 0;
+        for(var k = 0; k<array.length;k++){
+            var sum = array[k];
+            sum_arr += sum ;
+        }
+        return sum_arr;
+    }
+    var result3 = array_sum(array);
+    // console.log(result3);
+    
+    // PRODUCT OF ALL ELEMENTS IN THE ARRAY
+    function array_product (array){
+        var product_arr= 1;
+        for(var k=0;k<array.length;k++){
+            var product = array[k];
+            product_arr *= product;
+        }
+        return product_arr;
+    }
+
+    var result4 = array_product(array);
+    // console.log(result4);
+    
+    </script>
+</body>
+</html>

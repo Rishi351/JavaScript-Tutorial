@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    
+
+    <script>
+        function loadXMLDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function (){
+                let xmlDoc = xhttp.responseXML;
+                console.log(xmlDoc);
+                
+            }
+            xhttp.open("GET","/cd_catlog.xml");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

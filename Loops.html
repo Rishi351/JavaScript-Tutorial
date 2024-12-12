@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+    <script>
+
+        //FOR LOOP
+        var num = 10;
+        for(var i = 0, j=10; i <= num ; ++i,j--){
+            // console.log(i,j);
+            
+        }
+
+        //FOR IN LOOP
+        let marks = {Name:'Rishi', Subject:'Math', Age:25};
+        for (key in marks){
+            // console.log(key, marks[key]);
+            
+        }
+
+        //FOR OF LOOP
+        let count = [10, 20, 30, 40, 50,];
+        for (key of count){
+            // console.log(key);
+            
+        }
+
+        //WHILE LOOP
+        // var sum = 0;
+        // var input = 0;
+        // while(input != 'X'){
+        //     sum += parseInt(input);
+        //     input = prompt('add numbers to Add or X to exit');
+        // }
+        // console.log(sum);
+        
+        //DO WHILE LOOP
+        var data = 0;
+        var num = 0;
+        do{
+            num += parseInt(data);
+            data = prompt("enter number to add or X to exit");
+        }while(data != 'X')
+
+        console.log(num)
+    </script>
+</body>
+</html>

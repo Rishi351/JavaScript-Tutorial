@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- <input type="text" id="eventKey">
+
+    <button onclick="document.getElementById('time').innerHTML=Date()">Show Time</button>
+    <h1 id="time">
+    </h1>
+    <div 
+        onmouseover="document.body.style.backgroundColor = 'lightgreen'"
+        onmouseout="document.body.style.backgroundColor = 'white'"
+        id="changeColor"
+    >OnMouseOver to change color</div> -->
+
+    <form>
+        <label for="bgColor">Background Color</label>
+        <input type="text" id="bgColor" name="bgColor"><br><br>
+        <label for="color">Text Color</label>
+        <input type="text" name="color" id="color"><br><br>
+
+        <button id="button">Click to Change Color</button>
+    </form>
+    <script>
+
+        //form
+        var btn = document.getElementById("button");
+        var body = document.getElementsByTagName('body')[0];
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+            var bgName = document.getElementById('bgColor').value;
+            var bgtext = document.getElementById('color').value;
+            body.style.backgroundColor = bgName;
+            body.style.color = bgtext;
+        });
+
+        //form
+        //MOUSE EVENTS
+        var i=0;
+        // document.getElementById('changeColor').onmouseover = function(){
+        //     i++;
+        //     document.getElementById('time').innerHTML='mouse over :' + i;
+        // }
+            // document.getElementById('changeColor').onmousemove = function(){
+            //     i++;
+            //     document.getElementById('time').innerHTML='mouse move :' + i;
+            // }
+        // document.getElementById('changeColor').onmousedown = function(){
+        // //     alert('Mouse Down is done');
+        // // }
+        // document.getElementById('changeColor').onmouseup = function(){
+        //     alert('Mouse up is done');
+        // }
+
+        // document.getElementById('eventKey').onkeydown = function(){
+        //     document.getElementById('time').innerHTML= 'Key Down'
+        // }
+        // document.getElementById('eventKey').onkeyup = function(){
+        //     document.getElementById('time').innerHTML= 'Key up'
+        // }
+        //     document.getElementById('eventKey').onkeypress = function(){
+        //         document.getElementById('time').style.backgroundColor= 'yellow'
+        // }
+
+
+        //DOCUMENT EVENTS
+        // document.body.onload = function(){
+        //     alert('document is loaded')
+        // }
+        // document.body.onunload = function(){
+        //     alert('document is unloaded')
+        //     //it is difficult to test
+        // }
+
+
+        
+    </script>
+</body>
+</html>

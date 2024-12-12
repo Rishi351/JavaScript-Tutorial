@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loops</title>
+</head>
+<body>
+    <script>
+        for (var i = 0; i < 10;i++){
+            for (var j=0; j<5; j++){
+                // console.log('i = '+ i + " j = "+j);                
+            }
+            // console.log("This is Inside = "+i);
+            
+        }
+
+        /* PRACTICE PATTERN
+        1
+        12
+        123
+        1234
+        12345
+        */
+       for (var i =1; i<=5; i++){
+        var line  = '';
+        for(var j=1; j<=i ; j++){
+            line += j
+        }
+        // console.log(line);
+       }
+
+       /*PRACTICE PATTERN 2
+       1
+       22
+       333
+       4444
+       55555
+       */
+       for (var i =1; i<=5; i++){
+        var line  = '';
+        for(var j=1; j<=i ; j++){
+            line += i
+        }
+        // console.log(line);
+       }
+       
+
+       /* PRACTICE TABLE
+       1 X 1 = 1
+       1 X 2 = 2
+       ...
+       10 X 10 = 100
+       */
+
+       for (var i = 1; i<=10; i++){
+        // console.log("Table of " + i);
+        for(var j=1; j<=10; j++){
+            var line = i + " X " + j + " = " + (i*j);
+            // console.log(line);
+        }
+        // console.log(" ");
+        
+       }
+
+       /* PRACTICE PATTERNS
+       *
+       **
+       ***
+       ****
+       *****
+       */
+
+       var star = ""
+       for (var i = 0; i<=5;i++){
+        for(var j=0;j<i;j++){
+            star += "*"
+        }
+        star += "\n"
+       }
+
+       console.log(star);
+       
+/*
+54321
+4321
+321
+21
+1
+*/
+    //    let star = ""
+    //    let n=5;
+    //    for (let i = 1; i<=n;i++){
+    //     for(let j=1;j <= n-i +1 ;j++){
+    //         star += n - j -i +2
+    //     }
+    //     star += "\n"
+    //    }
+
+    //    console.log(star);
+    </script>
+</body>
+</html>

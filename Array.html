@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let students = ['yogesh','rishi','pooja','mayuri']
+        // console.log(students);
+        // console.log(students.push('hemraj')); //add value in end 
+        // console.log(students.pop());  //remove value in end
+        // console.log(students.shift());  //remove value in begining
+        // console.log(students.unshift('Gaurav'));  //add value in bigining
+         let employees = ['alok', 'atul', 'arpan']
+        let newArray = students.concat(employees);  //combine the two arrays in new variable 
+        console.log(newArray);
+        console.log(newArray.sort()); //sorting the array and maintain the array in alphabetical form
+        console.log(Array.isArray(newArray)); //give true if this is array
+        console.log(newArray.indexOf('rishi')); //it gives index number of value
+        console.log(newArray.indexOf('lokesh')); //if the value is not present in index in array then it will gives -1
+        
+
+        for(let i=0; i<newArray.length; i++){
+            // console.log(newArray[i]);  //using FOR loop
+            
+        }
+
+        for (let Array of newArray){
+            console.log(Array);  //using forEach loop and this is easy way 
+            
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

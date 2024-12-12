@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let jsonObject = {
+            "name":"Rishi",
+            "Age":25,
+            "city":true,
+            "subjects" :["English","Math","History"],
+            "address":{
+                "Village":"Kelwad",
+                "City":"Nagpur"
+            },
+        };
+        console.log(jsonObject);
+        
+        let jsonString = {
+            "name":"Rishi",
+            "Age":25,
+            "city":true,
+             "subjects":["English","Math","History"],
+             "address":{
+                "Village":"Kelwad",
+                "City":"Nagpur" },
+                "dob":"1998-11-11", 
+                "todayDate": new Date(),
+                "Printed":function() {
+                    console.log(this.name);
+                }
+                };
+        console.log(jsonString);
+        // let jsonParsedObject = JSON.parse(jsonString); //convert string into object
+        // console.log(jsonParsedObject);
+        // console.log(jsonString.dob);
+
+        //PARSING DATE
+        // jsonParsedObject.dob = new Date(jsonParsedObject.dob)  //Reasign the value
+    //    console.log(jsonParsedObject.dob);
+       
+       //PARSING FUNCTION
+        // jsonParsedObject.Printed = eval("("+jsonParsedObject.Printed+")")  //covert sting into function
+    //   console.log(jsonParsedObject.Printed());
+      
+        //JSON stringify
+        // let makeString = JSON.stringify(jsonString); //Object convert into string
+        // console.log(makeString);
+        
+        //STORE DATA
+        localStorage.setItem("jsonObject",JSON.stringify(jsonObject))  //set the code for storing data into localStorage
+        let storage = localStorage.getItem("jsonObject") //get the data and store into localStorage
+        // console.log(storage);
+        
+
+        //STRINGIFY FUNCTION
+        jsonString.Printed= jsonString.Printed.toString();
+        // console.log(jsonString.Printed); //converted into a string
+
+        jsonString.Printed =eval("("+jsonString.Printed+")")
+        // console.log(jsonString.Printed);  //converted into function again
+        
+
+        //Looping an object
+        for(const keys in jsonString){
+            console.log(keys +" : "+ jsonString[keys]);
+            
+        }
+
+        //JSON Array
+        let students = ["Rishi","Yogesh"];
+        let studArray = JSON.stringify(students)  //Array converted into string
+        let marks = '["90","50","80"]';   //string converted into array
+        let marksArray = JSON.parse(marks)
+    </script>
+</body>
+</html>

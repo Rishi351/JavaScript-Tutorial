@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing event and callback</title>
+</head>
+<body>
+    <!-- <button onclick="console.log('set timer start');setTimeout(count,3000)">Counter</button> -->
+    <button onclick="setInterval(time,2000)">Counter</button>
+    <script>
+        //SET TIME OUT
+    //     var counter = 0;
+    //     function count(){
+    //         console.log(counter++);
+            
+    //     }
+
+    //    var timer = setTimeout(count,3000);
+    //    clearTimeout(timer)
+
+
+    //SET INTERVAL
+    var counter = 0;
+    function time(){
+        // console.log(counter++);
+        
+    }
+    
+    var stop = setInterval(time,2000);
+    // clearInterval(stop)
+
+
+    //CALLBACK
+
+    function main(next){
+        console.log('main');
+        next();
+    }
+
+    function next1(){
+        console.log('next1');
+    }
+    function next2(){
+        console.log('next2');
+    }
+
+   main(next2)
+    </script>
+</body>
+</html>
